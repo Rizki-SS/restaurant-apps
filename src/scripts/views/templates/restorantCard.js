@@ -10,7 +10,11 @@ const restorantCard = (restorant) => `
           <p class="card__rating">
               Rating : ${restorant['rating']}
           </p>
-          <h1 class="card__title"><a href="#">${restorant['name']}</a></h1>
+          <h1 class="card__title">
+            <a href="#/detail/${restorant['id']}">
+              ${restorant['name']}
+            </a>
+          </h1>
           <p class="card__desc">
           ${restorant['description'].slice(0, 150)}...
           </p>
@@ -19,6 +23,4 @@ const restorantCard = (restorant) => `
 `;
 
 
-export {
-  restorantCard,
-};
+export default restorantCard;

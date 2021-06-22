@@ -1,13 +1,17 @@
-const NowPlaying = {
+import UrlParser from '../../routes/url-parser';
+
+const Detail = {
   async render() {
     return `
-      <h2>Now Playing Page</h2>
+      <section class="content">
+      </section>
     `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    console.log(url.id);
   },
 };
 
-export default NowPlaying;
+export default Detail;

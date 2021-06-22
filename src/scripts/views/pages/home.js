@@ -1,16 +1,18 @@
 import RestorantData from '../../data/restorant-data';
-import {restorantCard} from '../templates/template';
+import restorantCard from '../templates/restorantCard';
 
 const Home = {
   async render() {
     return `
-      <div id="restoran-list"></div>
+      <section class="content">
+
+      </section>
     `;
   },
 
   async afterRender() {
     const restorantList = await RestorantData.getAllRestorant();
-    const restorantElem = document.querySelector('#restoran-list');
+    const restorantElem = document.querySelector('.content');
     restorantList.forEach((restorant) => {
       restorantElem.innerHTML += restorantCard(restorant);
     });

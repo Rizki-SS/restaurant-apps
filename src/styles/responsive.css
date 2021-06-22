@@ -44,7 +44,7 @@
 }
 
 @media screen and (min-width: 700px) {
-    #restoran-list {
+    .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -55,14 +55,14 @@
         max-width: 800px;
         margin: 0 auto;
     }
-    #restoran-list {
+    .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 900px) {
-    #restoran-list {
+    .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
