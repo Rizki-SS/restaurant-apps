@@ -44,11 +44,9 @@
 }
 
 @media screen and (min-width: 700px) {
-    .content {
+    #restoran-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 16px;
     }
 }
 
@@ -57,16 +55,14 @@
         max-width: 800px;
         margin: 0 auto;
     }
-    .content {
+    #restoran-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 16px;
     }
 }
 
 @media screen and (min-width: 900px) {
-    .content {
+    #restoran-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
