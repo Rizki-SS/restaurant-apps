@@ -6,6 +6,12 @@ class RestorantData {
     const resJson = await response.json();
     return resJson.restaurants;
   }
+
+  static async getRestorantById(id) {
+    const response = await fetch(API.detail(id));
+    const resJson = await response.json();
+    return resJson.restaurant;
+  }
 }
 
 export default RestorantData;

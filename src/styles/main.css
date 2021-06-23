@@ -91,6 +91,7 @@ body {
     width: 100%;
     text-decoration: none;
     color: #fbe6c2;
+    font-size: 14px;
 }
 
 .nav a:hover {
@@ -143,7 +144,7 @@ main {
 
 
 /*
- * conten 
+ * card 
  */
 
 .card {
@@ -255,4 +256,71 @@ footer a:hover {
 
 .skip-link:focus {
     top: 0
+}
+
+.restorant__content{
+    display: grid;
+    grid-template-columns: auto  100px ;
+    margin: 15px;
+    font-size:14px;
+}
+
+.detail__tumb{
+    width: 100%;
+}
+
+.detail__title{
+    margin-top: 20px;
+}
+
+.detail__title a {
+    font-weight: 500;
+    font-size: 24px;
+    transition: 0.3s opacity;
+    text-decoration: none;
+    color: #f48b29;
+}
+
+.detail__rating{
+    margin: 10px 0px;
+    text-align: right;
+}
+
+.detail__rating i{
+    font-size: 20px;
+    color: #f48b29;
+}
+
+.detail__city{
+    margin: 5px 0px;
+}
+
+
+.detail__menu{
+    margin: 0px 10px;
+}
+
+/* sidebar card */
+
+.sidebar__card{
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.sidebar__card__title{
+    color: #f48b29;
+}
+
+.sidebar__card__content{
+    margin: 10px 20px;
+}
+
+.menu_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    column-gap: 12px;
 }
