@@ -3,7 +3,7 @@ const CONFIG = {
   baseImgaeUrl: (size) => `https://restaurant-api.dicoding.dev/images/${size}`,
   DATABASE_NAME: `MakaNin`,
   DATABASE_VERSI: 1,
-  OBJECT_STORE: 'restoran',
+  OBJECT_STORE_NAME: 'restoran',
   DEFAULT_LANGUAGE: 'en-us',
 };
 

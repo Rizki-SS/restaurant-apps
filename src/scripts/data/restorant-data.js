@@ -12,6 +12,19 @@ class RestorantData {
     const resJson = await response.json();
     return resJson.restaurant;
   }
+
+  static async postReview(data={}) {
+    const response = await fetch(API.review, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Auth-Token': '12345',
+      },
+      body: JSON.stringify(data),
+    });
+    // console.log(response.json());
+    return response.json();
+  }
 }
 
 export default RestorantData;

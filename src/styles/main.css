@@ -300,6 +300,10 @@ footer a:hover {
     margin: 0px 10px;
 }
 
+.detail__desc{
+    margin-bottom: 12px;
+}
+
 /* sidebar card */
 
 .sidebar__card{
@@ -323,4 +327,58 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
     font-size: 14px;
     column-gap: 12px;
+}
+
+/* input */
+
+input, textarea{
+     padding: 10px;
+     border:3px solid #e6e6e6;
+     border-radius: 5px;
+     margin-bottom: 10px; 
+     width: 100%;
+}
+
+input[type="submit"]{
+    color: #fff;
+    background-color: #f48b29;
+}
+
+ 
+input[type="submit"]:hover {
+    color: #f48b29;
+     background-color: #fbe6c2;
+}
+
+/* komentar */
+
+.komentar{
+    margin: 10px 0px;
+}
+
+.card__komentar{
+    margin: 10px 0;
+}
+
+.card__komentar span{
+    font-size: 10px;
+}
+
+
+/* fav btn */
+.fav {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #db0000;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
