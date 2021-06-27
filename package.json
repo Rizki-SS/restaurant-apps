@@ -45,6 +45,7 @@
         "idb": "^6.1.2",
         "regenerator-runtime": "^0.13.5",
         "sass": "^1.32.12",
-        "url-loader": "^4.1.1"
+        "url-loader": "^4.1.1",
+        "workbox-webpack-plugin": "^6.1.5"
     }
 }
