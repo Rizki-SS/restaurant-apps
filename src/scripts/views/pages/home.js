@@ -13,6 +13,7 @@ const Home = {
                 </p>
             </div>
         </div>
+      <h1 class="page__title">Cari Restoran Favorit mu</h1>
       <section class="content">
 
       </section>

@@ -139,6 +139,7 @@ body {
 
 main {
     width: 100%;
+    min-height: 80vh;
     margin: 0 auto;
 }
 
@@ -381,4 +382,12 @@ input[type="submit"]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.page__title{
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px;
+    color: #f48b29;
+    text-align: center;
 }

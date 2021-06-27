@@ -4,6 +4,7 @@ import restorantCard from '../templates/restorantCard';
 const Favorit = {
   async render() {
     return `
+      <h1 class="page__title">Restoran Favorit mu</h1>
       <section class="content">
 
       </section>
