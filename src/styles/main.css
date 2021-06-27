@@ -366,12 +366,12 @@ input[type="submit"]:hover {
 
 
 /* fav btn */
-.fav {
+#fav {
     font-size: 18px;
     position: fixed;
     bottom: 16px;
     right: 16px;
-    background-color: #db0000;
+    background-color: #f48b29;
     color: white;
     border: 0;
     border-radius: 50%;
