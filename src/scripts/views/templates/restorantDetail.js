@@ -16,11 +16,9 @@ const restorantDetail = (restorant) => `
         alt="${restorant.name}"
         title="${restorant.name}"
       >
-        <h1 class="detail__title">
-          <a href="#/detail/${restorant.id}">
-            ${restorant.name}
-          </a>
-        </h1>
+      <h1 class="detail__title">
+        ${restorant.name}
+      </h1>
       <p class="detail__city">
         <i class="fas fa-map-marker-alt"></i>
          ${restorant.address}, ${restorant.city}
@@ -32,6 +30,11 @@ const restorantDetail = (restorant) => `
       <p class="detail__desc">
         ${restorant.description}
       </p>
+      <ul class="detail__kategori">
+        ${restorant.categories.map((kategori)=>(
+    `<li>${kategori.name}</li>`
+  )).join('')}
+      </ul>
     </section>
     <section class="detail__menu">
       <div class="sidebar__card">
@@ -56,6 +59,7 @@ const restorantDetail = (restorant) => `
       </div>
     </section>
     <section class="komentar">
+        <h2>Komentar</h2>
         <div class="form__review">
           <div class="form__group">
             <input 

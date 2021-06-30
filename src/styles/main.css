@@ -18,6 +18,9 @@ body {
     color: #424242;
 }
 
+section{
+    margin: 10px 5px;
+}
 
 /*
  * Header
@@ -174,8 +177,8 @@ main {
 
 .card__title {
     font-weight: 500;
-    font-size: 16px;
-    margin-top: 16px;
+    font-size: 20px;
+    margin: 16px auto 10px;
     transition: 0.3s opacity;
     color: #f48b29;
 }
@@ -187,6 +190,7 @@ main {
 .card__title a {
     text-decoration: none;
     color: inherit;
+    padding: 12px 0px 10px;
 }
 
 .card__description {
@@ -272,9 +276,6 @@ footer a:hover {
 
 .detail__title{
     margin-top: 20px;
-}
-
-.detail__title a {
     font-weight: 500;
     font-size: 24px;
     transition: 0.3s opacity;
@@ -292,13 +293,22 @@ footer a:hover {
     color: #f48b29;
 }
 
-.detail__city{
-    margin: 5px 0px;
+.detail__kategori{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
 }
 
+.detail__kategori li{
+    border-radius: 8px;
+    background-color: #f48b29;
+    padding: 6px;
+    margin-right: 5px;
+    color: white;
+}
 
-.detail__menu{
-    margin: 0px 10px;
+.detail__city{
+    margin: 5px 0px;
 }
 
 .detail__desc{
@@ -338,6 +348,7 @@ input, textarea{
      border-radius: 5px;
      margin-bottom: 10px; 
      width: 100%;
+     min-height: 44px;
 }
 
 input[type="submit"]{
@@ -354,7 +365,12 @@ input[type="submit"]:hover {
 /* komentar */
 
 .komentar{
-    margin: 10px 0px;
+    margin-top: 20px;
+}
+
+.komentar h2{
+    color: #f48b29;
+    margin-bottom: 10px;
 }
 
 .card__komentar{
