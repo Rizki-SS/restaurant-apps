@@ -32,7 +32,7 @@ const LikeButtonInit = {
 
     const likeButton = document.querySelector('#fav');
     likeButton.addEventListener('click', async () => {
-      await RestourantDB.add(this._restorant);
+      await RestourantDB.put(this._restorant);
       this._renderButton();
     });
   },

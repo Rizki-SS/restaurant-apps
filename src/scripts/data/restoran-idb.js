@@ -19,11 +19,17 @@ const RestourantDB = {
     return (await dbPromise).getAll(CONFIG.OBJECT_STORE_NAME);
   },
 
-  async add(restorant) {
-    return (await dbPromise).add(CONFIG.OBJECT_STORE_NAME, restorant);
+  async put(restorant) {
+    if (!restorant.hasOwnProperty('id')) {
+      return;
+    }
+    return (await dbPromise).put(CONFIG.OBJECT_STORE_NAME, restorant);
   },
 
   async delete(id) {
+    if (!id) {
+      return;
+    }
     return (await dbPromise).delete(CONFIG.OBJECT_STORE_NAME, id);
   },
 };
