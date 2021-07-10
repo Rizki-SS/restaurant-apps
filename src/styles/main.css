@@ -407,3 +407,9 @@ input[type="submit"]:hover {
     color: #f48b29;
     text-align: center;
 }
+
+.empty__tag{
+    text-align: center;
+    font-size: 15px;
+    grid-column: 1/span2;
+}

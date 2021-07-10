@@ -6,7 +6,7 @@ const Favorit = {
     return `
       <h1 class="page__title">Restoran Favorit mu</h1>
       <section class="content">
-
+        
       </section>
     `;
   },
@@ -15,9 +15,16 @@ const Favorit = {
     const restorantList = await RestourantDB.getAll();
     console.log(restorantList);
     const restorantElem = document.querySelector('.content');
-    restorantList.forEach((restorant) => {
-      restorantElem.innerHTML += restorantCard(restorant);
-    });
+    if (restorantList.length > 0) {
+      restorantList.forEach((restorant) => {
+        restorantElem.innerHTML += restorantCard(restorant);
+      });
+    } else {
+      restorantElem.innerHTML +=
+      `<p class="empty__tag">
+          Hmmmm... Tampaknya belum ada restorant yang anda sukai
+        </p>`;
+    }
   },
 };
 
