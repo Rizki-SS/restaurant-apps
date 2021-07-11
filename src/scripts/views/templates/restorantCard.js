@@ -2,9 +2,12 @@ import CONFIG from '../../globals/config';
 
 const restorantCard = (restorant) => `
   <div class="card">
-      <img class="card__thumb" src="
-      ${CONFIG.baseImgaeUrl('medium')}/${restorant['pictureId']}"
-      alt="${restorant['name']}" title="${restorant['name']}">
+      <div class="card__thumb">
+        <img 
+          src=" ${CONFIG.baseImgaeUrl('medium')}/${restorant['pictureId']}"
+          alt="${restorant['name']}"
+          title="${restorant['name']}">
+      </div>
       <div class="card__content">
           <p class="card__city">${restorant['city']}</p>
           <p class="card__rating">
