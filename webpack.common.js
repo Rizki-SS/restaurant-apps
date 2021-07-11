@@ -3,6 +3,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const path = require('path');
 
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
+const ImageminMozjpeg = require('imagemin-mozjpeg');
+
 module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
   output: {
@@ -33,6 +36,15 @@ module.exports = {
         urlPattern: new RegExp('https://restaurant-api.dicoding.dev/'),
         handler: 'StaleWhileRevalidate',
       }],
+    }),
+    new ImageminWebpackPlugin({
+      plugins: [
+        // eslint-disable-next-line new-cap
+        ImageminMozjpeg({
+          quality: 30,
+          progressive: true,
+        }),
+      ],
     }),
   ],
 };

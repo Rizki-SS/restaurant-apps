@@ -46,6 +46,8 @@
     "dependencies": {
         "file-loader": "^6.2.0",
         "idb": "^6.1.2",
+        "imagemin-mozjpeg": "^9.0.0",
+        "imagemin-webpack-plugin": "^2.4.2",
         "regenerator-runtime": "^0.13.5",
         "sass": "^1.32.12",
         "url-loader": "^4.1.1",
