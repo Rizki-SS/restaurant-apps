@@ -10,12 +10,18 @@ const templateRating = (rating) => {
 
 const restorantDetail = (restorant) => `
     <section class="detail__about">
-      <img 
-        class="detail__tumb"
-        src="${CONFIG.baseImgaeUrl('medium')}/${restorant.pictureId}" 
-        alt="${restorant.name}"
-        title="${restorant.name}"
-      >
+      <picture >
+        <source 
+          media="(max-width: 600px)" 
+          srcset="${CONFIG.baseImgaeUrl('small')}/${restorant.pictureId}"
+        >
+        <img 
+          class="detail__tumb"
+          src="${CONFIG.baseImgaeUrl('medium')}/${restorant.pictureId}" 
+          alt="${restorant.name}"
+          title="${restorant.name}"
+        >
+      </picture>
       <h1 class="detail__title">
         ${restorant.name}
       </h1>
@@ -44,7 +50,7 @@ const restorantDetail = (restorant) => `
             ${restorant.menus.foods.map((food)=>(
     `<li class="menu-item">${food.name}</li>`
   )).join(' ')}
-          <ul>
+          </ul>
         </div>
       </div>
       <div class="sidebar__card">
@@ -54,7 +60,7 @@ const restorantDetail = (restorant) => `
             ${restorant.menus.drinks.map((drink)=>(
     `<li class="menu-item">${drink.name}</li>`
   )).join(' ')}
-          <ul>
+          </ul>
         </div>
       </div>
     </section>
