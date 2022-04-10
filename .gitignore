@@ -2,6 +2,3 @@ node_modules
 dist
 dist/bundle.js
 dist/index.html
-.github
-.firebaserc
-firebase.json
