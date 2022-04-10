@@ -2,18 +2,14 @@ import CONFIG from '../../globals/config';
 
 const restorantCard = (restorant) => `
   <div class="card">
-      <!-- <div class="card__thumb">
-        <img 
-          src=" ${CONFIG.baseImgaeUrl('medium')}/${restorant['pictureId']}"
-          alt="${restorant['name']}"
-          title="${restorant['name']}">
-      </div> -->
       <picture class="card__thumb">
         <source  
           media="(max-width: 600px)" 
-          srcset="${CONFIG.baseImgaeUrl('small')}/${restorant['pictureId']}">
+          data-srcset=
+            "${CONFIG.baseImgaeUrl('small')}/${restorant['pictureId']}"
+          >
         <img 
-          src="${CONFIG.baseImgaeUrl('medium')}/${restorant['pictureId']}" 
+          data-src="${CONFIG.baseImgaeUrl('medium')}/${restorant['pictureId']}" 
           alt="${restorant['name']}"
           class="lazyload"
           width="200" height="200"
